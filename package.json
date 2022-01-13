@@ -15,7 +15,7 @@
     "format": "prettier --write --ignore-unknown .",
     "prepare": "husky install",
     "deploy": "NODE_DEBUG=gh-pages gh-pages --dist src -f",
-    "start": "live-server src/index.html"
+    "start": "live-server src"
   },
   "devDependencies": {
     "eslint": "^7.2.0",
