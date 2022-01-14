@@ -6,25 +6,43 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/grid-guide.css" />
     <style>
+      .boxA {
+        border: none;
+        background: none;
+        line-height: normal;
+        text-align: left;
+      }
+
       .boxA:after {
         content: "";
         display: block;
         clear: both;
       }
 
-      .box1,
-      .box2,
-      .box3 {
+      .box2 {
         float: left;
-        width: 33.33%;
+        width: 100%;
+        margin-right: -300px;
+        overflow-wrap: break-word;
+        padding-right: 300px;
+      }
+
+      .box3 {
+        float: right;
+        width: 300px;
       }
     </style>
   </head>
   <body>
+    <div class="box1">BOX1</div>
     <div class="boxA">
-      <div class="box1">BOX1</div>
-      <div class="box2">BOX2</div>
+      <div class="box2">
+        <p>
+          123456789*123456789**123456789***123456789****123456789*******123456789*123456789*123456789*123456789*123456789*123456789*123456789*123456789*123456789*123456789*123456789*123456789*123456789*123456789*123456789*123456789*123456789*123456789*123456789*123456789*123456789*123456789*123456789*123456789*123456789*123456789*123456789*123456789*123456789*123456789*123456789*
+        </p>
+      </div>
       <div class="box3">BOX3</div>
     </div>
+    <div class="box4">BOX4</div>
   </body>
 </html>
