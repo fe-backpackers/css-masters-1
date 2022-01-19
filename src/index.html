@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/grid-guide.css" />
     <style>
       .site h1 {
         margin: 0;
@@ -15,6 +14,10 @@
       .site h1 a {
         text-decoration: none;
         color: #000;
+      }
+
+      .box2 {
+        background-color: #7cbac1;
       }
 
       .menu ul {
@@ -35,14 +38,14 @@
 
       .menu ul li a {
         display: block;
-        padding: 5px;
+        padding: 15px;
         text-decoration: none;
         color: #000;
         font-size: 14px;
       }
 
       .menu li a:hover {
-        background-color: #eee;
+        background-color: #75dbe7;
       }
 
       .story h1 {
@@ -147,6 +150,27 @@
         font-size: 14px;
       }
 
+      .box1 {
+        padding-top: 8px;
+        padding-bottom: 8px;
+      }
+
+      .box3 {
+        padding-top: 40px;
+        padding-bottom: 30px;
+      }
+
+      .box4 {
+        padding-top: 40px;
+        padding-bottom: 30px;
+      }
+
+      .box5 {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border-top: 1px solid #ddd;
+      }
+
       @media (min-width: 768px) {
         .boxA::after {
           content: "";
@@ -155,6 +179,8 @@
         }
 
         .box3 {
+          box-sizing: border-box;
+          padding-right: 50px;
           float: left;
           width: 70%;
         }
