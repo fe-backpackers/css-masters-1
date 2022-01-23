@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+body {
+  font-family: "맑은 고딕", "Apple SD Gothic Neo", sans-serif;
+}
+
+h1, h2, ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.site h1 {
+  font-size: 30px;
+}
+
+.site h1 a {
+  color: #000000;
+}
+
+.site h2 {
+  font-size: 12px;
+}
+
+.story h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.story p {
+  margin-bottom: 20px;
+}
+
+.menu li a {
+  display: block;
+  padding: 5px;
+  
+  color: #000000;
+  font-size: 14px;
+}
+
+.menu li a:hover {
+  background-color: #eeeeee;
+}
+
+.menu-h ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.menu-h li {
+  float: left;
+  width: auto;
+}
+
+.copyright p {
+  color: #666666;
+  font-size: 14px;
+}
