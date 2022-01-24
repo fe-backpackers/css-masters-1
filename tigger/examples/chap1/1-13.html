@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>1-11 예제</title>
+  <style>
+    .box {
+      height: 100px;
+      background-color: #cfcfcf;
+      border: 1px solid #6f6f6f;
+      box-sizing: border-box;
+    }
+
+    .float-group::after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+
+    @media (min-width: 600px) {
+      .box-group2 {
+        float: left;
+        width: 80%;
+      }
+
+      .box4 {
+        width: 20%;
+        float: left;
+      }
+    }
+
+    @media (min-width: 600px) and (max-width: 767px) {
+      .box4 {
+        height: 200px;
+      }
+    }
+
+    @media (min-width: 768px) {
+      .box2 {
+        width: 75%;
+        float: right;
+      }
+
+      .box3 {
+        width: 25%;
+        float: left;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="box">Box1</div>
+  <div class="float-group box-group1">
+    <div class="float-group box-group2">
+      <div class="box box2">Box2</div>
+      <div class="box box3">Box3</div>
+    </div>
+    <div class="box box4">Box4</div>
+  </div>
+</body>
+</html>
