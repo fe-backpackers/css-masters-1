@@ -5,8 +5,6 @@
 [class^="box"],
 div:not([class]) {
   box-sizing: border-box;
-  box-sizing: border-box;
-  box-sizing: border-box;
   border: solid 8px #faa;
   background-color: #fee;
   color: #faa;
