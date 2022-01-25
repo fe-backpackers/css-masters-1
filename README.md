@@ -44,3 +44,39 @@ p40 - 영어폰트는 띄어쓰기를 하지 않으면 한 줄로 이어진다.
 
 - v15.2 에서도 기본 폰트는 AppleMyungjo 이다.
 - 따라서 고딕체 사용을 원할 경우 반드시 font-family를 지정해주어야 한다.
+
+## Chapter 3. 블로그/뉴스 스타일 사이트의 콘텐츠 페이지
+
+### 1. p93 default 값도 반드시 명시해주는 것이 좋은가?
+
+```css
+.story img {
+  max-width: 100%;
+  height: auto;
+}
+```
+
+height 속성의 default 값은 auto 이다.
+
+따라서 명시하지 않은 경우 height: auto 가 적용된다.
+
+할당하고자 하는 값이 default 값과 일치하더라도 기재해주는 것이 좋은 컨벤션인가?
+
+#### 1. 그렇다.
+
+- css 의 경우 스코프를 모두 공유하므로, 다른 선택자에 의해 특정 속성 값이 할당될 수 있다. 따라서 의도를 분명히 하기 위해 기재해주는 것이 좋다. specificity(명시도)에 따라 달라질 수 있지만..
+- default값이 브라우져 또는 브라우져의 버젼마다 상이할 수 있다. (**확인필요**)
+- 모든 개발자가 모든 css 속성의 default값을 아는 것이 아니다.
+
+#### 2. 아니다.
+
+- css-in-js , css modules 와 같이 제한된 스코프를 가진 경우에는 다른 선택자에 의해 값이 할당되지 않으므로 기재하지 않아도 된다.
+- 타이핑 절약.
+- css 속성의 default 값을 알아두는 것이 성장에 도움이 된다.
+
+### 2. width: auto ⇒ 부모의 크기에 따라, height: auto ⇒ 자식의 높이에 따라
+
+- CSS 스펙 보는 방법은?
+  - [https://www.w3.org/TR/CSS/#css](https://www.w3.org/TR/CSS/#css)
+- width: auto, height: auto 는 어떻게 결정되는가?
+  - [https://www.w3.org/TR/css-display-3/](https://www.w3.org/TR/css-display-3/)
