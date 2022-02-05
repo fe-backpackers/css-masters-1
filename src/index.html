@@ -182,13 +182,40 @@
       .recommended li a {
         text-decoration: none;
         color: #000;
-        padding: 5px;
+        padding: 0;
         font-size: 14px;
         display: block;
+        margin: 0 0 10px;
+      }
+
+      .recommended li a img {
+        width: 100%;
+        height: auto;
+        border: none;
+        vertical-align: bottom;
       }
 
       .recommended li a:hover {
         background-color: #eee;
+        opacity: 0.8;
+      }
+
+      .recommended li a .text {
+        padding: 5px 10px;
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+
+      .recommended a {
+        position: relative;
+      }
+
+      .recommended .text {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        box-sizing: border-box;
       }
 
       .popular h1 {
@@ -442,8 +469,18 @@
           <aside class="recommended">
             <h1>추천 기사</h1>
             <ul>
-              <li><a href="#">처음부터 시작하는 꽃꽂이</a></li>
-              <li><a href="#">오래된 스마트폰을 충전했더니</a></li>
+              <li>
+                <a href="#">
+                  <img src="img/flower.jpg" alt="" />
+                  <div class="text">처음부터 시작하는 꽃꽂이</div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="img/old.jpg" alt="" />
+                  <div class="text">오래된 스마트폰을 충전했더니</div>
+                </a>
+              </li>
             </ul>
           </aside>
         </div>
