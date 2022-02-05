@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+body {
+    font-family: "맑은 고딕", "Apple SD Gothic Neo", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.box {
+    height: 100px;
+    background-color: paleturquoise;
+    border: 1px solid #cfcfcf;
+}
+
+@media (min-width: 768px) {
+    .float-container::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+    .box3 {
+        width: 70%;
+        float: left;
+    }
+    
+    .box4 {
+        width: 30%;
+        float: left;
+    }
+}

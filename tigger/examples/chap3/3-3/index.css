@@ -1,0 +1,114 @@
+@charset "UTF-8";
+@import "./reset.css";
+
+.site h1 {
+  font-size: 30px;
+  padding: 8px 0;
+}
+
+.site h1 a {
+  color: #000000;
+}
+
+.menu {
+  background-color: #7cbac1;
+  margin-bottom: 30px;
+}
+
+.menu ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.menu li {
+  float: left;
+  width: auto;
+}
+
+.menu li a {
+  display: block;
+  padding: 15px;
+  
+  color: #000000;
+  font-size: 14px;
+}
+
+.menu li a:hover {
+  background-color: #75dbe7;
+}
+
+.story {
+  padding: 40px 0 30px;
+}
+
+.story h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.story p {
+  margin-bottom: 20px;
+}
+
+.story img {
+  max-width: 100%;
+  height: auto;
+}
+
+.sidemenu {
+  padding: 40px 0 30px;
+}
+
+.sidemenu h2 {
+  margin-bottom: 10px;
+  border-bottom: 1px dotted #dddddd;
+  color: #666666;
+  font-size: 18px;
+}
+
+.sidemenu li a {
+  display: block;
+  padding: 5px;
+  
+  color: #000000;
+  font-size: 14px;
+}
+
+.sidemenu li a:hover {
+  background-color: #eeeeee;
+}
+
+.sidemenu section {
+  margin-bottom: 30px;
+}
+
+.sidemenu section:last-child {
+  margin-bottom: 0;
+}
+
+.copyright p {
+  color: #666666;
+  font-size: 14px;
+  border-top: 1px solid #dddddd;
+  padding: 15px 0;
+}
+
+@media (min-width: 768px) {  
+  .float-container::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  .story {
+    width: 70%;
+    float: left;
+    padding-right: 50px;
+  }
+
+  .sidemenu {
+    width: 30%;
+    float: left;
+  }
+}
