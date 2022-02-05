@@ -128,6 +128,52 @@
         font-size: 20px;
       }
 
+      .share {
+        margin-top: 40px;
+      }
+
+      .share ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .share ul::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+
+      .share ul li {
+        float: left;
+        width: 33.3333%;
+      }
+
+      .share ul li a {
+        display: block;
+        padding: 10px 5px;
+        color: #fff;
+        font-size: 14px;
+        text-decoration: none;
+        text-align: center;
+      }
+
+      .share-tw {
+        background-color: #55acee;
+      }
+
+      .share-fb {
+        background-color: #3b5998;
+      }
+
+      .share-gp {
+        background-color: #dd4b39;
+      }
+
+      .share ul li a:hover {
+        opacity: 0.8;
+      }
+
       .sidemenu {
         margin-bottom: 30px;
       }
@@ -316,6 +362,11 @@
         .box3 {
           padding-top: 25px;
         }
+
+        .share a span {
+          display: inline-block;
+          text-indent: -9999px;
+        }
       }
 
       @media (min-width: 600px) and (max-width: 767px) {
@@ -433,6 +484,29 @@
             물론 다른 것을 함께 뿌려 먹는 것도 맛있는데요. 소금, 설탕, 마요네즈,
             올리브유를 추천합니다.
           </p>
+
+          <div class="share">
+            <ul>
+              <li>
+                <a href="#" class="share-tw">
+                  <i class="fab fa-twitter"></i>
+                  <span>Twitter</span>로 공유</a
+                >
+              </li>
+              <li>
+                <a href="#" class="share-fb">
+                  <i class="fab fa-facebook"></i>
+                  <span>Facebook</span>으로 공유</a
+                >
+              </li>
+              <li>
+                <a href="#" class="share-gp">
+                  <i class="fab fa-google-plus-g"></i>
+                  <span>Google+</span>로 공유</a
+                >
+              </li>
+            </ul>
+          </div>
         </article>
       </div>
       <div class="box4">
