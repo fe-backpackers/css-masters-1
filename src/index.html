@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -67,6 +74,16 @@
 
       .story img {
         max-width: 100%;
+      }
+
+      .storyinfo {
+        margin: -10px 0 20px;
+      }
+
+      .storyinfo i {
+        color: #aaa;
+        margin-right: 5px;
+        font-size: 20px;
       }
 
       .sidemenu {
@@ -281,7 +298,10 @@
       <div class="box3">
         <article class="story">
           <h1>토마토를 맛있게 먹는 방법</h1>
-
+          <div class="storyinfo">
+            <i class="far fa-clock"></i>
+            <time datetime="2014-08-10">2014년 8월 10일</time>
+          </div>
           <p>
             <img src="./img/tomato.jpg" alt="토마토" />
           </p>
