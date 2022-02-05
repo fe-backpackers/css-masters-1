@@ -206,14 +206,38 @@
 
       .popular li a {
         text-decoration: none;
-        color: #000;
+        color: #28b;
         padding: 5px;
         font-size: 14px;
         display: block;
+        border-bottom: dotted 1px #ddd;
       }
 
       .popular li a:hover {
         background-color: #eee;
+      }
+
+      .popular li a::after {
+        display: block;
+        content: "";
+        clear: both;
+      }
+
+      .popular li a img {
+        border: none;
+        float: left;
+        width: 60px;
+      }
+
+      .popular li a .text {
+        padding-left: 15px;
+        margin-left: 60px;
+      }
+
+      .popular li a .text span {
+        color: #666;
+        font-size: 12px;
+        display: block;
       }
 
       .copyright p {
@@ -427,12 +451,55 @@
           <aside class="popular">
             <h1>인기 기사</h1>
             <ul>
-              <li><a href="#">꽃을 좋아하는 사람들을 위한 포인트</a></li>
-              <li><a href="#">어플리케이션의 편리한 사용 방법</a></li>
-              <li><a href="#">주말에 찾아갈말한 여행지</a></li>
-              <li><a href="#">세계 각지의 쇼핑백</a></li>
-              <li><a href="#">방의 가구를 꾸미는 방법</a></li>
-              <li><a href="#">바다 안에서 만난 것들</a></li>
+              <li>
+                <a href="#"
+                  ><img src="img/flower-60x60.jpg" />
+                  <div class="text">
+                    꽃을 좋아하는 사람들을 위한 포인트
+                    <span>외출</span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="img/tel-60x60.jpg" />
+                  <div class="text">
+                    어플리케이션의 편리한 사용 방법
+                    <span>스마트폰</span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="img/green-60x60.jpg" />
+                  <div class="text">
+                    주말에 찾아갈말한 여행지
+                    <span>외출</span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="img/bag-60x60.jpg" />
+                  <div class="text">세계 각지의 쇼핑백 <span>잡화</span></div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="img/color-60x60.jpg" />
+                  <div class="text">
+                    방의 가구를 꾸미는 방법 <span>잡화</span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="img/sea-60x60.jpg" />
+                  <div class="text">
+                    바다 안에서 만난 것들 <span>외출</span>
+                  </div>
+                </a>
+              </li>
             </ul>
           </aside>
         </div>
