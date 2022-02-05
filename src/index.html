@@ -475,9 +475,9 @@
 
       @media (min-width: 1040px) {
         .box1,
-        .box2,
+        .box2-inner,
         .boxA,
-        .box5 {
+        .box5-inner {
           width: 1000px;
           margin-left: auto;
           margin-right: auto;
@@ -492,16 +492,18 @@
       </div>
     </div>
     <div class="box2">
-      <nav class="menu">
-        <ul>
-          <li><a href="#">메인</a></li>
-          <li><a href="#">잡화</a></li>
-          <li><a href="#">도구</a></li>
-          <li><a href="#">외출</a></li>
-          <li><a href="#">음식</a></li>
-          <li><a href="#">문의</a></li>
-        </ul>
-      </nav>
+      <div class="box2-inner">
+        <nav class="menu">
+          <ul>
+            <li><a href="#">메인</a></li>
+            <li><a href="#">잡화</a></li>
+            <li><a href="#">도구</a></li>
+            <li><a href="#">외출</a></li>
+            <li><a href="#">음식</a></li>
+            <li><a href="#">문의</a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
     <div class="boxA">
       <div class="box3">
@@ -708,8 +710,10 @@
       </div>
     </div>
     <div class="box5">
-      <div class="copyright">
-        <p>Copyright &copy; TimeSwitch</p>
+      <div class="box5-inner">
+        <div class="copyright">
+          <p>Copyright &copy; TimeSwitch</p>
+        </div>
       </div>
     </div>
   </body>

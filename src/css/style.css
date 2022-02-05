@@ -1,5 +1,14 @@
 @charset "UTF-8";
 
 body {
+  margin: 0;
   font-family: "맑은 고딕", "Apple SD Gothic Neo", sans-serif;
+}
+
+.box1,
+.box2-inner,
+.boxA,
+.box5-inner {
+  padding-left: 10px;
+  padding-right: 10px;
 }
