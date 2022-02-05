@@ -63,6 +63,41 @@
         background-color: #75dbe7;
       }
 
+      .story-cat {
+        margin-bottom: 25px;
+      }
+
+      .story-cat ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .story-cat ul::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+
+      .story-cat ul li {
+        float: left;
+      }
+
+      .story-cat ul li a {
+        text-decoration: none;
+        color: #fff;
+        background-color: #75dbe7;
+        padding: 3px 5px;
+        font-size: 12px;
+        display: block;
+        margin-right: 5px;
+        border-radius: 2px;
+      }
+
+      .story-cat ul li a:hover {
+        background-color: #94ecf6;
+      }
+
       .story h1 {
         margin: 0 0 20px;
         font-size: 36px;
@@ -296,6 +331,12 @@
     </div>
     <div class="boxA">
       <div class="box3">
+        <div class="story-cat">
+          <ul>
+            <li><a href="#">음식</a></li>
+            <li><a href="#">외출</a></li>
+          </ul>
+        </div>
         <article class="story">
           <h1>토마토를 맛있게 먹는 방법</h1>
           <div class="storyinfo">
