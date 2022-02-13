@@ -62,13 +62,13 @@ height 속성의 default 값은 auto 이다.
 
 할당하고자 하는 값이 default 값과 일치하더라도 기재해주는 것이 좋은 컨벤션인가?
 
-#### 1. 그렇다.
+#### 1. 그렇다
 
 - css 의 경우 스코프를 모두 공유하므로, 다른 선택자에 의해 특정 속성 값이 할당될 수 있다. 따라서 의도를 분명히 하기 위해 기재해주는 것이 좋다. specificity(명시도)에 따라 달라질 수 있지만..
 - default값이 브라우져 또는 브라우져의 버젼마다 상이할 수 있다. (**확인필요**)
 - 모든 개발자가 모든 css 속성의 default값을 아는 것이 아니다.
 
-#### 2. 아니다.
+#### 2. 아니다
 
 - css-in-js , css modules 와 같이 제한된 스코프를 가진 경우에는 다른 선택자에 의해 값이 할당되지 않으므로 기재하지 않아도 된다.
 - 타이핑 절약.
@@ -80,3 +80,84 @@ height 속성의 default 값은 auto 이다.
   - [https://www.w3.org/TR/CSS/#css](https://www.w3.org/TR/CSS/#css)
 - width: auto, height: auto 는 어떻게 결정되는가?
   - [https://www.w3.org/TR/css-display-3/](https://www.w3.org/TR/css-display-3/)
+
+## 3. Chapter 3. 블로그/뉴스 스타일 사이드트의 콘텐츠 페이지
+
+### 1. 3-4-1 조정에 필요한 @media 설정을 추가
+
+- 1안, 2안 모두 가능할 것으로 생각되며, 장단점 확실
+
+#### 1안: 적용할 해상도 명시적으로 기재
+
+- 특정 해상도에만 해당 스타일이 적용된다는 것을 명시적으로 나타낸다.
+
+- 해상도간 스타일의 변화가 극명한 경우, cascading 될 부분이 없는 경우 유용
+
+```css
+.box5 {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+@media (max-width: 599px) {
+}
+
+@media (min-width: 600px) and (max-width: 767px) {
+}
+
+@media (min-width: 768px) {
+}
+```
+
+#### 2안: cascading 을 통해 중복 줄이기
+
+- 모바일 우선 개발
+- 중복된 코드 줄일 수 있다.
+- 최종적으로 어떤 프로퍼티가 적용될지가 한 눈에 보이지 않는다.
+
+```css
+.box5 {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+@media (min-width: 600px) {
+}
+
+@media (min-width: 768px) {
+}
+```
+
+## 비슷한 예시
+
+3-4-5. 레이아웃 전체의 너비를 고정
+
+```css
+@media (min-width: 1040px) {
+  body {
+    width: 1000px;
+    margin: auto;
+  }
+}
+```
+
+```css
+body {
+  max-width: 1000px;
+  margin: auto;
+}
+```
+
+※ `max-width`는 IE6에서 지원되지 않는다.
+
+## 2. `<time datetime=”2014-08-10”>`
+
+- 웹 접근성 감안하여 시간 관련 텍스트는 time 태그 쓰기
+
+## 3. `<i>`
+
+- 3-5-2. 기사의 작성일에 아이콘을 붙여 출력
+- HTML5에서 `<i>` 태그는 관용구 또는 분위기 다른 어구 등 다른 것과 구별하고 싶은 어구를 나타냅니다.
+- `<i>` 가 속하는 Palpable Content 카테고리는 요소 내부에 아무것도 넣지 않고 작성하면 스크립트 또는 CSS에서 이후에 콘텐츠를 ~~삽입할 것을 허용하고 있습니다.~~ 삽입해야 한다!
+- 따라서 `<i>` 태그를 아이콘 폰트의 태그로 사용
+- [https://html.spec.whatwg.org/#palpable-content](https://html.spec.whatwg.org/#palpable-content)
