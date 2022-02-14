@@ -355,19 +355,48 @@ body {
   font-size: 12px;
 }
 
+.summary {
+  margin-bottom: 20px;
+}
+
+.summary a {
+  display: block;
+  border: solid 1px #ddd;
+  color: #000;
+  text-decoration: none;
+}
+
+.summary a:hover {
+  box-shadow: 0 0 10px #ddd;
+}
+
 .summary img {
+  vertical-align: bottom;
   max-width: 100%;
   height: auto;
+  margin-bottom: 15px;
   border: none;
 }
 
 .summary h1 {
-  margin: 0 0 20px;
-  font-size: 36px;
+  margin: 0 15px 5px;
+  font-size: 22px;
 }
 
 .summary p {
-  margin: 0 0 20px;
+  margin: 0 15px 15px;
+  font-size: 14px;
+}
+
+.more {
+  display: inline-block;
+  padding: 5px 15px;
+  background-color: #3077be;
+  color: #fff;
+}
+
+.more i {
+  margin-left: 10px;
 }
 
 .copyright p {
@@ -395,6 +424,10 @@ body {
   padding-top: 15px;
   padding-bottom: 15px;
   border-top: 1px solid #ddd;
+}
+
+.top .boxA {
+  padding: 20px 0;
 }
 
 @media (max-width: 599px) {
@@ -435,6 +468,30 @@ body {
 
   .relation li:nth-child(3) {
     clear: both;
+  }
+}
+
+@media (min-width: 600px) {
+  .boxA-1 .summary {
+    float: left;
+    width: 50%;
+  }
+
+  .boxA-1::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  .boxA-1 .summary:nth-child(odd) {
+    clear: both;
+    box-sizing: border-box;
+    padding-right: 10px;
+  }
+
+  .boxA-1 .summary:nth-child(even) {
+    box-sizing: border-box;
+    padding-left: 10px;
   }
 }
 
@@ -479,6 +536,10 @@ body {
   .box4 {
     float: left;
     width: 30%;
+  }
+
+  .pickup h1 {
+    font-size: 30px;
   }
 }
 
