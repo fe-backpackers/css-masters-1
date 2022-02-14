@@ -355,6 +355,30 @@ body {
   font-size: 12px;
 }
 
+.pickup {
+  position: relative;
+}
+
+.badge {
+  position: absolute;
+  top: 44%;
+  right: -15px;
+  box-sizing: border-box;
+  width: 120px;
+  height: 120px;
+  padding-top: 20px;
+  border-radius: 50%;
+  background-color: #00a0e9;
+  color: #fff;
+  box-shadow: 0 0 4px #aaa;
+  text-align: center;
+}
+
+.badge i {
+  display: block;
+  font-size: 40px;
+}
+
 .summary {
   margin-bottom: 20px;
 }
@@ -508,6 +532,13 @@ body {
   .relation li:nth-child(3) {
     clear: both;
   }
+
+  .badge {
+    top: -8px;
+    right: 10px;
+    transform: scale(0.5);
+    transform-origin: right top;
+  }
 }
 
 @media (min-width: 600px) {
@@ -535,6 +566,11 @@ body {
 }
 
 @media (min-width: 600px) and (max-width: 767px) {
+  .badge {
+    top: 30%;
+    right: 15px;
+  }
+
   .box4::after {
     content: "";
     display: block;
@@ -580,6 +616,10 @@ body {
   .pickup h1 {
     font-size: 30px;
   }
+
+  .badge {
+    right: 0;
+  }
 }
 
 @media (min-width: 1040px) {
@@ -590,5 +630,9 @@ body {
     width: 1000px;
     margin-right: auto;
     margin-left: auto;
+  }
+
+  .badge {
+    right: -15px;
   }
 }
