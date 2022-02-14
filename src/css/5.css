@@ -33,7 +33,7 @@ body {
 
 .menu li a {
   display: block;
-  padding: 5px;
+  padding: 10px 15px;
   color: #000;
   font-size: 14px;
   text-decoration: none;
@@ -86,6 +86,29 @@ body {
   font-size: 14px;
 }
 
+.boxA {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.box4 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.boxA,
+.box4,
+.box5 {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.box5 {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #ddd;
+}
+
 @media (min-width: 768px) {
   .boxA::after {
     content: "";
@@ -93,9 +116,11 @@ body {
     clear: both;
   }
 
-  .box1,
-  .box2 {
+  .box1 {
     float: left;
-    width: 50%;
+  }
+
+  .box2 {
+    float: right;
   }
 }
