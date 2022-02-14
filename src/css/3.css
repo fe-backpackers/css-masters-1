@@ -1,0 +1,479 @@
+.site h1 {
+  margin: 0;
+  font-weight: normal;
+  font-size: 30px;
+  font-family: "Paytone One", sans-serif;
+}
+
+.site h1 a {
+  color: #83a4a8;
+  text-decoration: none;
+}
+
+.box2 {
+  background-color: #7cbac1;
+}
+
+.menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.menu ul li {
+  float: left;
+}
+
+.menu li a {
+  display: block;
+  padding: 15px;
+  color: #000;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.menu li a:hover {
+  background-color: #75dbe7;
+}
+
+.story-cat {
+  margin-bottom: 25px;
+}
+
+.story-cat ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.story-cat ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.story-cat ul li {
+  float: left;
+}
+
+.story-cat li a {
+  display: block;
+  margin-right: 5px;
+  padding: 3px 5px;
+  border-radius: 2px;
+  background-color: #75dbe7;
+  color: #fff;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.story-cat li a:hover {
+  background-color: #94ecf6;
+}
+
+.story h1 {
+  margin: 0 0 20px;
+  font-size: 36px;
+}
+
+.story p {
+  margin: 0 0 20px;
+}
+
+.story h2 {
+  margin: 40px 0 20px;
+  padding-left: 10px;
+  border-left: 10px solid #7cbac1;
+  font-weight: normal;
+}
+
+.story img {
+  max-width: 100%;
+}
+
+.storyinfo {
+  margin: -10px 0 20px;
+}
+
+.storyinfo i {
+  margin-right: 5px;
+  color: #aaa;
+  font-size: 20px;
+}
+
+.share {
+  margin-top: 40px;
+}
+
+.share ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.share ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.share ul li {
+  float: left;
+  width: 33.3333%;
+}
+
+.share li a {
+  display: block;
+  padding: 10px 5px;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.share-tw {
+  background-color: #55acee;
+}
+
+.share-fb {
+  background-color: #3b5998;
+}
+
+.share-gp {
+  background-color: #dd4b39;
+}
+
+.share li a:hover {
+  opacity: 80%;
+}
+
+.relation {
+  margin: 40px 0 0;
+  padding: 20px;
+  background-color: #f0f0d4;
+}
+
+.relation h1 {
+  margin: 0 0 5px;
+  color: #727224;
+  font-weight: normal;
+  font-size: 20px;
+}
+
+.relation ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.relation ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.relation li {
+  float: left;
+  width: 25%;
+}
+
+.relation li a {
+  display: block;
+  padding: 5px;
+  color: #000;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.relation li a:hover {
+  text-decoration: underline;
+}
+
+.relation li a img {
+  max-width: 100%;
+  height: auto;
+  border: none;
+}
+
+.sidemenu {
+  margin-bottom: 30px;
+}
+
+.sidemenu h1 {
+  margin: 0 0 10px;
+  border-bottom: dotted 2px #ddd;
+  color: #666;
+  font-size: 18px;
+}
+
+.sidemenu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sidemenu li a {
+  display: block;
+  padding: 5px;
+  color: #000;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.sidemenu li a:hover {
+  background-color: #eee;
+}
+
+.sidemenu li a i {
+  margin-right: 5px;
+  color: #888;
+}
+
+.recommended {
+  margin-bottom: 30px;
+}
+
+.recommended h1 {
+  margin: 0 0 10px;
+  border-bottom: dotted 2px #ddd;
+  color: #666;
+  font-size: 18px;
+}
+
+.recommended ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.recommended li a {
+  display: block;
+  margin: 0 0 10px;
+  padding: 0;
+  color: #000;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.recommended li a img {
+  vertical-align: bottom;
+  width: 100%;
+  height: auto;
+  border: none;
+}
+
+.recommended li a:hover {
+  background-color: #eee;
+  opacity: 80%;
+}
+
+.recommended li a .text {
+  padding: 5px 10px;
+  background-color: rgba(0 0 0 / 50%);
+  color: #fff;
+}
+
+.recommended a {
+  position: relative;
+}
+
+.recommended .text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.popular h1 {
+  margin: 0 0 10px;
+  border-bottom: dotted 2px #ddd;
+  color: #666;
+  font-size: 18px;
+}
+
+.popular ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.popular li a {
+  display: block;
+  padding: 5px;
+  border-bottom: dotted 1px #ddd;
+  color: #28b;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.popular li a:hover {
+  background-color: #eee;
+}
+
+.popular li a::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.popular li a img {
+  float: left;
+  width: 60px;
+  border: none;
+}
+
+.popular li a .text {
+  margin-left: 60px;
+  padding-left: 15px;
+}
+
+.popular li a .text span {
+  display: block;
+  color: #666;
+  font-size: 12px;
+}
+
+.summary img {
+  max-width: 100%;
+  height: auto;
+  border: none;
+}
+
+.summary h1 {
+  margin: 0 0 20px;
+  font-size: 36px;
+}
+
+.summary p {
+  margin: 0 0 20px;
+}
+
+.copyright p {
+  margin: 0;
+  color: #666;
+  font-size: 14px;
+}
+
+.box1 {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.box3 {
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+.box4 {
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+.box5 {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-top: 1px solid #ddd;
+}
+
+@media (max-width: 599px) {
+  .site h1 {
+    font-size: 20px;
+  }
+
+  .menu ul li a {
+    padding: 10px 3px;
+    font-size: 11px;
+  }
+
+  .story h1 {
+    font-size: 26px;
+  }
+
+  .box1 {
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
+
+  .box3 {
+    padding-top: 25px;
+  }
+
+  .share a span {
+    display: inline-block;
+    text-indent: -9999px;
+  }
+
+  .relation {
+    padding: 10px;
+  }
+
+  .relation li {
+    width: 50%;
+  }
+
+  .relation li:nth-child(3) {
+    clear: both;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 767px) {
+  .box4::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  .box4-1,
+  .box4-2 {
+    float: left;
+    width: 50%;
+  }
+
+  .box4-1 {
+    box-sizing: border-box;
+    padding-right: 20px;
+  }
+
+  .box4-2 {
+    box-sizing: border-box;
+    padding-left: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .boxA::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  .box3 {
+    float: left;
+    box-sizing: border-box;
+    width: 70%;
+    padding-right: 50px;
+  }
+
+  .box4 {
+    float: left;
+    width: 30%;
+  }
+}
+
+@media (min-width: 1040px) {
+  .box1,
+  .box2-inner,
+  .boxA,
+  .box5-inner {
+    width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
