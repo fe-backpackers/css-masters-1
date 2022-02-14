@@ -1,0 +1,31 @@
+.news h1 {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 18px;
+  color: #666666;
+}
+
+.news ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.news li a {
+  display: block;
+  padding: 5px;
+  border-bottom: dotted 2px #dddddd;
+  color: #000000;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.news li a:hover {
+  background-color: #eeeeee;
+}
+
+.news time {
+  margin-right: 10px;
+  color: #888888;
+  font-weight: bold;
+}

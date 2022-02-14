@@ -1,0 +1,70 @@
+@charset "UTF-8";
+@import "nav.css";
+@import "news.css";
+
+body {
+  margin: 0;
+  font-family: "맑은 고딕", "Apple SD Gothic Neo", sans-serif;
+}
+
+.site h1 a {
+  color: #fff;
+  text-decoration: 0;
+}
+
+.site h1 {
+  margin: 0;
+  font-size: 30px;
+}
+
+.topimg {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+.copyright p {
+  margin: 0;
+  color: #666666;
+  font-size: 14px;
+}
+
+.boxA,
+.box4,
+.box5 {
+  padding: 15px 0;
+}
+
+.box5 {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #dddddd;
+}
+
+.boxA {
+  background-color: #333;
+  padding: 20px 0 10px;
+}
+
+.box4 {
+  background-color: #e8e8c4;
+  padding: 0 20px;
+}
+
+@media (min-width: 768px) {
+  .boxA:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  .box1 {
+    float: left;
+    width: auto;
+  }
+
+  .box2 {
+    float: right;
+    width: auto;
+  }
+}
