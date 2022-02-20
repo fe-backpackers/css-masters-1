@@ -5,4 +5,8 @@ module.exports = {
     "stylelint-config-prettier",
   ],
   plugins: ["stylelint-order"],
+  rules: {
+    "selector-class-pattern": null,
+    "no-descending-specificity": null,
+  },
 };
