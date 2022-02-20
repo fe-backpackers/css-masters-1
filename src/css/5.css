@@ -143,6 +143,32 @@ body {
   font-size: 24px;
 }
 
+.follow p {
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #ddd;
+  font-size: 14px;
+  text-align: center;
+}
+
+.follow-info {
+  position: relative;
+}
+
+.follow-info::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  display: block;
+  width: 0;
+  height: 0;
+  margin-left: -15px;
+  border: 15px solid transparent;
+  border-top-color: #ddd;
+}
+
 .copyright p {
   margin: 0;
   color: #666;
