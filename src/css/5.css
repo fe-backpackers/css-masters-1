@@ -105,6 +105,44 @@ body {
   margin-left: 60px;
 }
 
+.follow ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.follow li a {
+  display: block;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.follow li a:hover {
+  opacity: 80%;
+}
+
+.follow-tw {
+  background-color: #63bafb;
+}
+
+.follow-fb {
+  background-color: #5288f7;
+}
+
+.follow-gp {
+  background-color: #f65d4a;
+}
+
+.follow i {
+  vertical-align: middle;
+  margin-right: 10px;
+  font-size: 24px;
+}
+
 .copyright p {
   margin: 0;
   color: #666;
@@ -126,6 +164,10 @@ body {
 .box5 {
   padding-right: 15px;
   padding-left: 15px;
+}
+
+.box4-1 {
+  padding-bottom: 20px;
 }
 
 .box5 {
@@ -154,6 +196,24 @@ body {
 
   .box2 {
     float: right;
+  }
+
+  .box4::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  .box4-1 {
+    float: left;
+    box-sizing: border-box;
+    width: 70%;
+    padding-right: 35px;
+  }
+
+  .box4-2 {
+    float: left;
+    width: 30%;
   }
 }
 
