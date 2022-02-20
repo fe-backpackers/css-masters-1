@@ -37,7 +37,11 @@
           </div>
         </div>
         <div class="box2">
-          <nav class="menu">
+          <button id="menubtn">
+            <i class="fa fa-bars"></i>
+            <span>MENU</span>
+          </button>
+          <nav class="menu hide">
             <ul>
               <li><a href="#">메인</a></li>
               <li><a href="#">연혁</a></li>
@@ -158,5 +162,10 @@
         </div>
       </div>
     </div>
+    <script>
+      document.querySelector("#menubtn").addEventListener("click", (event) => {
+        document.querySelector(".menu").classList.toggle("hide");
+      });
+    </script>
   </body>
 </html>

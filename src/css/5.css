@@ -22,34 +22,6 @@ body {
   border: none;
 }
 
-.menu ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.menu ul::after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
-.menu li {
-  float: left;
-}
-
-.menu li a {
-  display: block;
-  padding: 10px 15px;
-  color: #000;
-  font-size: 14px;
-  text-decoration: none;
-}
-
-.menu li a:hover {
-  background-color: #eee;
-}
-
 .top {
   position: relative;
 }
@@ -274,6 +246,13 @@ body {
   padding-bottom: 10px;
 }
 
+@media (max-width: 359px) {
+  .site img {
+    width: 225px;
+    height: auto;
+  }
+}
+
 @media (max-width: 599px) {
   .menu li a {
     padding: 10px 7px;
@@ -286,7 +265,102 @@ body {
   }
 }
 
+@media (max-width: 767px) {
+  .hide {
+    display: none;
+  }
+
+  #menubtn {
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    padding: 6px 12px;
+    border: solid 1px #aaa;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+  }
+
+  #menubtn:hover {
+    background-color: #ddd;
+  }
+
+  /* 접근성 측면에서 outline은 남겨두는게 좋다
+  #menubtn:focus {
+    outline: none;
+  } */
+
+  #menubtn i {
+    color: #888;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  /* IR 기법 */
+  #menubtn span {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border-width: 0;
+    white-space: nowrap;
+  }
+
+  .menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .menu li a {
+    display: block;
+    padding: 10px 15px;
+    color: #000;
+    font-size: 14px;
+    text-decoration: none;
+  }
+
+  .menu li a:hover {
+    background-color: #eee;
+  }
+}
+
 @media (min-width: 768px) {
+  #menubtn {
+    display: none;
+  }
+
+  .menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .menu ul::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  .menu li {
+    float: left;
+  }
+
+  .menu li a {
+    display: block;
+    padding: 10px 15px;
+    color: #000;
+    font-size: 14px;
+    text-decoration: none;
+  }
+
+  .menu li a:hover {
+    background-color: #eee;
+  }
+
   .boxA::after {
     content: "";
     display: block;
