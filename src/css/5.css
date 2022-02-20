@@ -55,6 +55,53 @@ body {
   max-width: 100%;
 }
 
+.summary a {
+  display: block;
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+}
+
+.summary a:hover {
+  opacity: 80%;
+}
+
+.summary i {
+  display: block;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-size: 38px;
+}
+
+.summary .fa-database {
+  background-color: #bfbd13;
+}
+
+.summary .fa-chart-bar {
+  background-color: #c58839;
+}
+
+.summary .fa-envelope {
+  background-color: #859f46;
+}
+
+.summary h1 {
+  margin: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-weight: normal;
+  font-size: 20px;
+}
+
+.summary p {
+  margin: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #524e3c;
+  font-size: 12px;
+}
+
 .news {
   padding: 20px;
   border: 5px solid #ddd;
@@ -187,7 +234,8 @@ body {
 
 .boxA,
 .box4,
-.box5 {
+.box5,
+.box6 {
   padding-right: 15px;
   padding-left: 15px;
 }
@@ -200,6 +248,16 @@ body {
   padding-top: 15px;
   padding-bottom: 15px;
   background-color: #ddd;
+}
+
+.box6 {
+  padding-top: 20px;
+}
+
+.box6-1,
+.box6-2,
+.box6-3 {
+  padding-bottom: 10px;
 }
 
 @media (max-width: 599px) {
@@ -241,6 +299,24 @@ body {
     float: left;
     width: 30%;
   }
+
+  .box6::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  .box6-1,
+  .box6-2 {
+    float: left;
+    width: 32%;
+    margin-right: 2%;
+  }
+
+  .box6-3 {
+    float: left;
+    width: 32%;
+  }
 }
 
 @media (min-width: 1190px) {
@@ -252,7 +328,8 @@ body {
   .boxA-inner,
   .box3,
   .box4,
-  .box5-inner {
+  .box5-inner,
+  .box6 {
     width: 1140px;
     margin-right: auto;
     margin-left: auto;
