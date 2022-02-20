@@ -122,6 +122,13 @@ body {
   background-color: #ddd;
 }
 
+@media (max-width: 599px) {
+  .menu li a {
+    padding: 10px 7px;
+    font-size: 11px;
+  }
+}
+
 @media (min-width: 768px) {
   .boxA::after {
     content: "";
