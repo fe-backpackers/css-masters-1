@@ -74,10 +74,23 @@ body {
   background-color: #eee;
 }
 
+.news a::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
 .news time {
-  margin-right: 10px;
+  float: left;
+  width: 60px;
   color: #888;
   font-weight: bold;
+}
+
+.news .text {
+  float: none;
+  width: auto;
+  margin-left: 60px;
 }
 
 .copyright p {
