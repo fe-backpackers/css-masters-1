@@ -144,3 +144,19 @@ body {
     float: right;
   }
 }
+
+@media (min-width: 1190px) {
+  .boxA {
+    margin-bottom: 20px;
+    border-bottom: solid 1px #ddd;
+  }
+
+  .boxA-inner,
+  .box3,
+  .box4,
+  .box5-inner {
+    width: 1140px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
