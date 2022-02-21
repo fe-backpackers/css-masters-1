@@ -1,0 +1,135 @@
+@media (min-width: 768px) {
+  #menubtn {
+    display: none;
+  }
+
+  #menu {
+    display: block !important;
+  }
+
+  .menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .menu li a {
+    display: block;
+    padding: 10px 15px;
+    color: #000000;
+    font-size: 14px;
+    text-decoration: none;
+  }
+
+  .menu li a:hover {
+    background-color: #eeeeee;
+  }
+
+  .menu ul:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  .menu li {
+    float: left;
+    width: auto;
+  }
+
+  .boxA:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  .box1 {
+    float: left;
+    width: auto;
+  }
+
+  .box2 {
+    float: right;
+    width: auto;
+  }
+
+  .box4:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  .box4-1 {
+    float: left;
+    width: 70%;
+    padding-right: 35px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .box4-2 {
+    float: left;
+    width: 30%;
+  }
+
+  .box6:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  .box6-1 {
+    float: left;
+    width: 32%;
+    margin-right: 2%;
+  }
+
+  .box6-2 {
+    float: left;
+    width: 32%;
+    margin-right: 2%;
+  }
+
+  .box6-3 {
+    float: left;
+    width: 32%;
+  }
+
+  .box7:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  .box7-1 {
+    float: right;
+    width: 80%;
+    padding-left: 50px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .box7-2 {
+    float: left;
+    width: 20%;
+  }
+}
+
+@media (min-width: 1190px) {
+  .box3,
+  .box4,
+  .boxA-inner,
+  .box5-inner,
+  .box6,
+  .box7 {
+    width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .boxA {
+    margin-bottom: 20px;
+    border-bottom: solid 1px #dddddd;
+  }
+}
