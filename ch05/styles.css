@@ -52,6 +52,12 @@ body {
   font-size: 14px;
 }
 
+.boxA,
+.box4,
+.box5 {
+  padding: 15px 0;
+}
+
 .box5 {
   padding-top: 15px;
   padding-bottom: 15px;
