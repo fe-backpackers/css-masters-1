@@ -1,0 +1,488 @@
+@charset "UTF-8";
+
+body {
+  margin: 0;
+  font-family: "맑은 고딕", "Apple SD Gothic Neo", sans-serif;
+}
+
+.site h1 {
+  margin: 0;
+  font-size: 30px;
+}
+
+.site a {
+  color: #000;
+  text-decoration: none;
+}
+
+.site img {
+  /* img 의 width, height 속성으로 대체
+  width: 250px;
+  height: 33px; */
+  border: none;
+}
+
+.top {
+  position: relative;
+}
+
+.catch {
+  position: absolute;
+  bottom: 7%;
+  left: 3%;
+  margin: 0;
+  padding: 15px;
+  background-color: rgba(255 255 255 / 70%);
+  font-size: 28px;
+}
+
+.topimg {
+  vertical-align: bottom;
+  max-width: 100%;
+}
+
+.summary a {
+  display: block;
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+}
+
+.summary a:hover {
+  opacity: 80%;
+}
+
+.summary i {
+  display: block;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-size: 38px;
+}
+
+.summary .fa-database {
+  background-color: #bfbd13;
+}
+
+.summary .fa-chart-bar {
+  background-color: #c58839;
+}
+
+.summary .fa-envelope {
+  background-color: #859f46;
+}
+
+.summary h1 {
+  margin: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-weight: normal;
+  font-size: 20px;
+}
+
+.summary p {
+  margin: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #524e3c;
+  font-size: 12px;
+}
+
+.news {
+  padding: 20px;
+  border: 5px solid #ddd;
+}
+
+.news h1 {
+  margin-top: 0;
+  margin-bottom: 5px;
+  color: #666;
+  font-size: 18px;
+}
+
+.news ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.news li a {
+  display: block;
+  padding: 5px;
+  border-bottom: dotted 2px #ddd;
+  color: #000;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.news li a:hover {
+  background-color: #eee;
+}
+
+.news a::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.news time {
+  float: left;
+  width: 60px;
+  color: #888;
+  font-weight: bold;
+}
+
+.news .text {
+  float: none;
+  width: auto;
+  margin-left: 60px;
+}
+
+.follow ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.follow li a {
+  display: block;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.follow li a:hover {
+  opacity: 80%;
+}
+
+.follow-tw {
+  background-color: #63bafb;
+}
+
+.follow-fb {
+  background-color: #5288f7;
+}
+
+.follow-gp {
+  background-color: #f65d4a;
+}
+
+.follow i {
+  vertical-align: middle;
+  margin-right: 10px;
+  font-size: 24px;
+}
+
+.follow p {
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #ddd;
+  font-size: 14px;
+  text-align: center;
+}
+
+.follow-info {
+  position: relative;
+}
+
+.follow-info::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  display: block;
+  width: 0;
+  height: 0;
+  margin-left: -15px;
+  border: 15px solid transparent;
+  border-top-color: #ddd;
+}
+
+.story h1 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 36px;
+}
+
+.story p {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.sidemenu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sidemenu li a {
+  display: block;
+  padding: 5px;
+  color: #000;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.sidemenu li a:hover {
+  background-color: #eee;
+}
+
+.copyright p {
+  margin: 0;
+  color: #666;
+  font-size: 14px;
+}
+
+.contents .boxA {
+  border-bottom: solid 1px #ddd;
+}
+
+.boxA {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.box4 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.boxA,
+.box4,
+.box5,
+.box6,
+.box7 {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.box4-1 {
+  padding-bottom: 20px;
+}
+
+.box5 {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #ddd;
+}
+
+.box6 {
+  padding-top: 20px;
+}
+
+.box6-1,
+.box6-2,
+.box6-3 {
+  padding-bottom: 10px;
+}
+
+.box7 {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+@media (max-width: 359px) {
+  .site img {
+    width: 225px;
+    height: auto;
+  }
+}
+
+@media (max-width: 599px) {
+  .menu li a {
+    padding: 10px 7px;
+    font-size: 11px;
+  }
+
+  .catch {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 767px) {
+  .hide {
+    display: none;
+  }
+
+  #menubtn {
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    padding: 6px 12px;
+    border: solid 1px #aaa;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+  }
+
+  #menubtn:hover {
+    background-color: #ddd;
+  }
+
+  /* 접근성 측면에서 outline은 남겨두는게 좋다
+  #menubtn:focus {
+    outline: none;
+  } */
+
+  #menubtn i {
+    color: #888;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  /* IR 기법 */
+  #menubtn span {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border-width: 0;
+    white-space: nowrap;
+  }
+
+  .menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .menu li a {
+    display: block;
+    padding: 10px 15px;
+    color: #000;
+    font-size: 14px;
+    text-decoration: none;
+  }
+
+  .menu li a:hover {
+    background-color: #eee;
+  }
+}
+
+@media (min-width: 768px) {
+  #menubtn {
+    display: none;
+  }
+
+  .menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .menu ul::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  .menu li {
+    float: left;
+  }
+
+  .menu li a {
+    display: block;
+    padding: 10px 15px;
+    color: #000;
+    font-size: 14px;
+    text-decoration: none;
+  }
+
+  .menu li a:hover {
+    background-color: #eee;
+  }
+
+  .boxA::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  .box1 {
+    float: left;
+  }
+
+  .box2 {
+    float: right;
+  }
+
+  .box4::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  .box4-1 {
+    float: left;
+    box-sizing: border-box;
+    width: 70%;
+    padding-right: 35px;
+  }
+
+  .box4-2 {
+    float: left;
+    width: 30%;
+  }
+
+  .box6::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  .box6-1,
+  .box6-2 {
+    float: left;
+    width: 32%;
+    margin-right: 2%;
+  }
+
+  .box6-3 {
+    float: left;
+    width: 32%;
+  }
+
+  .box7::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  .box7-1 {
+    float: right;
+    box-sizing: border-box;
+    width: 80%;
+    padding-left: 20px;
+  }
+
+  .box7-2 {
+    float: left;
+    width: 20%;
+  }
+}
+
+@media (min-width: 1190px) {
+  .boxA {
+    margin-bottom: 20px;
+    border-bottom: solid 1px #ddd;
+  }
+
+  .boxA-inner,
+  .box3,
+  .box4,
+  .box5-inner,
+  .box6,
+  .box7 {
+    width: 1140px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
