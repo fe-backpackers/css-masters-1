@@ -242,6 +242,50 @@ body {
   margin-bottom: 20px;
 }
 
+.bread {
+  margin-bottom: 20px;
+}
+
+.bread ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.bread li a {
+  display: inline-block;
+  padding: 5px;
+  color: #000;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.bread li a:hover {
+  background-color: #eee;
+}
+
+.bread ol::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.bread li {
+  float: left;
+  width: auto;
+}
+
+.bread li::after {
+  content: "\003e";
+  margin-right: 10px;
+  margin-left: 10px;
+  color: #888;
+}
+
+.bread li:last-child::after {
+  content: "";
+}
+
 .sidemenu ul {
   margin: 0;
   padding: 0;
