@@ -1,3 +1,12 @@
+
+#menubtn {
+  display: none;
+}
+
+#menu {
+  display: block !important;
+}
+
 .menu ul {
   margin: 0;
   padding: 0;
@@ -7,13 +16,13 @@
 .menu li a {
   display: block;
   padding: 10px 15px;
-  color: #fff;
+  color: #000000;
   font-size: 14px;
-  text-decoration: 0;
+  text-decoration: none;
 }
 
 .menu li a:hover {
-  background-color: #eee;
+  background-color: #eeeeee;
 }
 
 .menu ul:after {
