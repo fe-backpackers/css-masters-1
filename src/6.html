@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link rel="stylesheet" href="./css/grid-guide.css" /> -->
+    <link rel="stylesheet" href="./css/6.css" />
+  </head>
+  <body class="contents">
+    <div class="boxA">
+      <div class="boxA-inner">
+        <div class="box1">
+          <div class="site">
+            <h1>
+              <a href="#"
+                ><img
+                  src="img/logo-large.png"
+                  alt="TimeSwitch"
+                  width="250"
+                  height="33"
+              /></a>
+            </h1>
+          </div>
+        </div>
+        <div class="box2">
+          <button id="menubtn">
+            <i class="fa fa-bars"></i>
+            <span>MENU</span>
+          </button>
+          <nav class="menu hide">
+            <ul>
+              <li><a href="#">메인</a></li>
+              <li><a href="#">연혁</a></li>
+              <li><a href="#">사업 소개</a></li>
+              <li><a href="#">채용 정보</a></li>
+              <li><a href="#">문의</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="box7">
+      <div class="box7-1">
+        <article class="story">
+          <div class="bread">
+            <ol>
+              <li><a href="#">메인</a></li>
+              <li><a href="#">사업 소개</a></li>
+            </ol>
+          </div>
+          <h1>데이터 분석/해석</h1>
+          <img src="img/header-data.jpg" alt="" class="storyimg" />
+          <p class="lead">
+            축적된 데이터를 활용하려면 어떻게 분석/해석할지가 중요합니다.
+            TimeSwitch에서는 표준적인 분석 방법과 활용 목적에 따른 해석을
+            제공합니다.
+          </p>
+          <h2><i class="fas fa-check-square"></i>평균값 확인</h2>
+          <p>
+            기본적인 평균입니다. 대상 데이터들의 대표적인 수치를 확인할 수
+            있습니다. 다만 평
+          </p>
+          <h2><i class="fas fa-check-square"></i>분산 확인</h2>
+          <p>
+            통계적인 방법을 사용해서 축적된 데이터의 분산을 확인합니다. 분산을
+            사용하면 평균값으로는 보이지 않는 문제와 특징을 찾아낼 수 있습니다.
+          </p>
+          <h2><i class="fas fa-check-square"></i>상관관계/인과관계 도출</h2>
+          <p>
+            여러 개의 데이터를 조합하고 분석/해석해서 상관관계와 인과 관계가
+            있다고 생각되는 데이터를 추출합니다.
+          </p>
+        </article>
+      </div>
+      <div class="box7-2">
+        <aside class="sidemenu">
+          <h1><i class="fas fa-caret-square-down"></i> 사업 소개</h1>
+          <ul>
+            <li><a href="#">데이터 축적</a></li>
+            <li><a href="#">데이터 분석/해석</a></li>
+            <li><a href="#">데이터 시각화</a></li>
+            <li><a href="#">어플리케이션 활용</a></li>
+            <li><a href="#">24시간 지원</a></li>
+            <li><a href="#">실적 소개</a></li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+    <div class="box5">
+      <div class="box5-inner">
+        <div class="copyright">
+          <p>Copyright &copy; TimeSwitch</p>
+        </div>
+      </div>
+    </div>
+    <script>
+      document.querySelector("#menubtn").addEventListener("click", (event) => {
+        document.querySelector(".menu").classList.toggle("hide");
+      });
+    </script>
+  </body>
+</html>
